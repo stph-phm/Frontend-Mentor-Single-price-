@@ -35,11 +35,13 @@ header {
 div {
      padding: 2em;
 }
+
 p {
      font-size: 16px;
      color: hsl(204, 43%, 93%);
 
 }
+
 .single {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
@@ -93,13 +95,33 @@ p {
 }
 
 @media (max-width:900px) {
+
+     h1{
+          font-size: 20px;
+     }
+     h2 {
+          font-size: 1em;
+     }
+     p {
+          font-size: 13px;
+     }
+
+     .price span {
+          font-size: 20px;
+     }
+
      .header {
-          padding: auto;
+          padding: none;
+     }
+
+     .header p {
+          line-height:25px;
      }
 
      .single {
           width: 100%;
      }
+
      .part-left {
           grid-column: 1/5;
           border-bottom-left-radius: 0;
